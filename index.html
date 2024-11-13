@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="./styyle.css">
+   
+    <header>
+       <h1> Abdulhay Mohammed</h1>
+        <h1>Shopping Cart</h1>
+        <!-- <div class="cart-icon">
+            <img src="https://img.icons8.com/ios-filled/50/000000/shopping-cart.png" alt="Cart Icon">
+            <span id="cart-count">0</span>
+        </div> -->
+    </header>
+
+
+  <div class="cart-summary">
+    <h3>Cart Summary</h3>
+    <p>Total Price: $<span id="total-price">0</span></p>
+    <select id="payment-method">
+        <option value="">Select Payment Method</option>
+        <option value="credit-card">Credit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="bank-transfer">Bank Transfer</option>
+        <option value="cbe">(CBE)</option>
+        <option value="nib">Hijra Bank</option>
+         <option value="nib">Abysiniya</option>
+         <option value="nib">ZemZem Bank</option>
+         <option value="nib">Nib International Bank</option><br>
+        
+    </select>
+    <!-- <button id="pay-button">Pay Now</button> -->
+    <button id="checkout">Checkout</button>
+</div>
+    
+
+<body>
+    
+    <div class="containn">
+        <div class="product">
+            <h3>smart huawei</h3>
+            <img src="./phoneImg/samsung3.webp" alt="smart Huawei">
+            <p>Price: $10</p>
+            <button class="add-to-cart" data-product-id="1" data-price="10">Add to Cart</button>
+         
+        </div>
+            
+        <div class="product">
+            <h3>Button Phone</h3>
+            <img src="./phoneImg/btn smadl.jpg" alt="Button phone">
+            <p>Price: $15</p>
+            <button class="add-to-cart" data-product-id="2" data-price="15">Add to Cart</button>
+          
+        </div> 
+        <div class="product">
+            <h3>iPhone</h3>
+            <img src="./phoneImg/1 smsamsung.jpg" alt="smsamsung">
+            <p>Price: $20</p>
+            <button class="add-to-cart" data-product-id="3" data-price="20">Add to Cart</button>
+        </div>
+</div>
+
+        <div class="containn">
+            <div class="product">
+                <h3>iPhone</h3>
+                <img src="./phoneImg/itel.webp" alt="itel">
+                <p>Price: $10</p>
+                <button class="add-to-cart" data-id="1" data-name="itel" data-price="10" data-image="./img/11.jpg">Add to Cart</button>
+            </div> 
+            <div class="product">
+                <h3>iPhone</h3>
+                <img src="./phoneImg/samsung.webp" alt="samsung">
+                <p>Price: $20</p>
+                <button class="add-to-cart" data-id="1" data-name="samsung" data-price="20" data-image="./img/11.jpg">Add to Cart</button>
+            </div> 
+            <div class="product">
+                <h3>iPhone</h3>
+                <img src="./phoneImg/sm huawei.jpg" alt="huawei">
+                <p>Price: $30</p>
+                <button class="add-to-cart" data-id="1" data-name="huawei" data-price="30" data-image="./img/11.jpg">Add to Cart</button>
+            </div>
+        </div>
+   
+        <!-- <div id="cart-modal" class="cart-modal">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="checkout-btn" onclick="completePurchase()">Checkout</button>
+            <button onclick="closeCart()">Close</button>
+        </div>  -->
+      
+    
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
